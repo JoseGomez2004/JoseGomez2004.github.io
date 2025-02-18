@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="tyles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h2>JF</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">About me</a></li>
+            <li><a href="#habilidades">Skills</a></li>
+            <li><a href="#portafolio">Portfolio</a></li>
+            <li><a href="#contacto">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>My Portfolio</h1>
+        
+    </header>
+    <div class="sobre-mi" id="sobre-mi">
+        <h2>About me</h2>
+        <p> Hello,my name is Jose Fernando Gomez Cuyare and i'm a Junior programmer with just over six months of experience with Front-end programmer <BR>
+        and would like expannd my knowledge and take on new challenge <br>
+        </p>
+       
+    </div>
+    <section class="habilidades" id="habilidades">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML5 Logo" class="skill-icon">
+                <h3>HTML5</h3>
+                <div class="skill-level">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                    <span>Junior - 70%</span>
+                </div>
+                <ul class="skill-details">
+                    <li>Estructura semántica</li>
+                    <li>Formularios y validación</li>
+                    <li>SEO básico</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png" alt="CSS3 Logo" class="skill-icon">
+                <h3>CSS3</h3>
+                <div class="skill-level">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                    </div>
+                    <span>Junior - 65%</span>
+                </div>
+                <ul class="skill-details">
+                    <li>Flexbox y Grid</li>
+                    <li>Responsive Design</li>
+                    <li>Animaciones básicas</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://th.bing.com/th/id/OIP.6eJAwKYo65W5WIqe3MQl6wHaHa?rs=1&pid=ImgDetMain" alt="JavaScript Logo" class="skill-icon">
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                    <span>Junior - 60%</span>
+                </div>
+                <ul class="skill-details">
+                    <li>ES6+ Features</li>
+                    <li>DOM Manipulation</li>
+                    <li>Async/Await</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="portafolio" id="portafolio">
+        <h2 class="section-title">My Projects</h2>
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <img src="ruta/a/imagen/calculadora.png" alt="Calculadora" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>Simple Calculator</h3>
+                    <p>A functional calculator built with HTML, CSS and JavaScript that allows you to perform basic operations..</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="calculadora/caluladora.html" target="_blank" class="btn-ver-proyecto">View Demo</a>
+                        <a href="#" target="_blank" class="btn-codigo">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="ruta/a/imagen/lista.png" alt="Lista de Hechos" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>List of Facts</h3>
+                    <p>Application to manage daily tasks with add, delete and mark as completed functionality.</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="lista_hecohs/hecho.html" target="_blank" class="btn-ver-proyecto">View Demo</a>
+                        <a href="#" target="_blank" class="btn-codigo">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="ruta/a/imagen/productos.png" alt="Página de Productos" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>Products Page</h3>
+                    <p>Product catalog with filters, search and shopping cart implemented.</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="pagina_productos/index.html" target="_blank" class="btn-ver-proyecto">View Demo</a>
+                        <a href="#" target="_blank" class="btn-codigo">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="ruta/a/imagen/tiempo.png" alt="Aplicación del Tiempo" class="proyecto-imagen">
+                <div class="proyecto-info">
+                    <h3>Time Application</h3>
+                    <p>Weather application that displays the current and forecast for the next few days using an API.</p>
+                    <ul class="proyecto-tecnologias">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>API</li>
+                    </ul>
+                    <div class="proyecto-enlaces">
+                        <a href="app.tiempo/tiempo.html" target="_blank" class="btn-ver-proyecto">View Demo</a>
+                        <a href="#" target="_blank" class="btn-codigo">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2 class="section-title">Contact</h2>
+        <div class="contacto-contenido">
+            <div class="contacto-info">
+                <h3>¡Let`s talk!</h3>
+                <p>I am interested in web development opportunities. If you have any questions or proposals, feel free to contact me.</p>
+                
+                <div class="contacto-detalles">
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: smokdre1234@gmail.com</p>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Phone: +58 412 297 4682</p>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Location: Cucuta, Colombia</p>
+                    </div>
+                </div>
+
+                <div class="redes-sociales">
+                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="red-social">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/tu-usuario" target="_blank" class="red-social">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/tu-usuario" target="_blank" class="red-social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 Jose Fernando. All Rights Reserved.</p>
+    </footer>
+   
+</body>
+</html>

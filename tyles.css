@@ -1,0 +1,302 @@
+:root {
+    --color-primario: #000000;
+    --color-secundario: #ffffff;
+    --color-gris: #333333;
+    --color-gris-claro: #f5f5f5;
+    --sombra-suave: 0 5px 15px rgba(0,0,0,0.1);
+    --sombra-fuerte: 0 8px 30px rgba(0,0,0,0.2);
+    --transicion: all 0.3s ease;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--color-primario);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--sombra-suave);
+}
+
+.nav-logo h2 {
+    color: var(--color-secundario);
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-secundario);
+    transition: var(--transicion);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    background: linear-gradient(45deg, #000000, #333333);
+}
+
+.header h1 {
+    color: var(--color-secundario);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#busqueda {
+    padding: 1rem 2rem;
+    width: 80%;
+    max-width: 500px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: var(--sombra-fuerte);
+    transition: var(--transicion);
+}
+
+#busqueda:focus {
+    transform: scale(1.02);
+    outline: none;
+}
+
+/* Sección Sobre Mí */
+.sobre-mi {
+    padding: 4rem 2rem;
+    background: var(--color-gris-claro);
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-mi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(0,0,0,0.05));
+    z-index: 1;
+}
+
+/* Sección Habilidades */
+.skill-card {
+    background: var(--color-secundario);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+}
+
+.skill-icon {
+    height: 10rem;
+    width: 10rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.progress-bar {
+    background: var(--color-gris-claro);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    background: var(--color-primario);
+    height: 100%;
+    transition: width 1s ease-in-out;
+}
+
+/* Sección Proyectos */
+.proyecto-card {
+    background: var(--color-secundario);
+    padding: 2rem;
+    border-radius: 15px;
+    height: 200px;
+    
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion);
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.proyecto-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: var(--transicion);
+}
+
+.proyecto-card:hover .proyecto-imagen {
+    filter: grayscale(0%);
+}
+
+.btn-ver-proyecto, .btn-codigo {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--color-primario);
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--color-primario);
+    transition: var(--transicion);
+}
+
+.btn-ver-proyecto:hover, .btn-codigo:hover {
+    background: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+/* Sección Contacto */
+.contacto {
+    background: var(--color-gris);
+    color: var(--color-secundario);
+    padding: 4rem 2rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    color: var(--color-secundario);
+    transition: var(--transicion);
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    background: rgba(255,255,255,0.2);
+    outline: none;
+}
+
+.btn-enviar {
+    background: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.btn-enviar:hover {
+    transform: scale(1.05);
+    box-shadow: var(--sombra-fuerte);
+}
+
+/* Footer */
+footer {
+    background: var(--color-primario);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Efectos de animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+}
+
+/* Tema oscuro */
+[data-theme="dark"] {
+    --color-primario: #ffffff;
+    --color-secundario: #1a1a1a;
+    --color-gris: #4a4a4a;
+    --color-gris-claro: #2a2a2a;
+}
+
+/* Estilos del toggle de tema */
+.theme-toggler {
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: var(--color-gris);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.theme-toggler::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--color-secundario);
+    border-radius: 50%;
+    transition: var(--transicion);
+}
+
+[data-theme="dark"] .theme-toggler::before {
+    transform: translateX(25px);
+}
+
+.theme-toggler i {
+    position: absolute;
+    color: var(--color-secundario);
+    font-size: 14px;
+}
+
+.fa-sun {
+    right: 5px;
+}
+
+.fa-moon {
+    left: 5px;
+}
