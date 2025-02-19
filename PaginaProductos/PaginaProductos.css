@@ -104,11 +104,11 @@
   .producto-imagen {
     position: relative;
     overflow: hidden;
-    height: 250px;
+    height: 350px;
   }
   
   .producto-imagen img {
-    width: 100%;
+    width: 250px;
     height: 100%;
     object-fit: cover;
   }
